@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" action="">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="carModel" class="form-label">Car model</label>
+        <input name="brand" type="text" class="form-control" id="carModel">
+      </div>
+      <div class="mb-3">
+        <label for="yearManufacture" class="form-label">Year of car manufacture</label>
+        <input name="manufacture_year"
+               type="number"
+               class="form-control"
+               id="yearManufacture">
+      </div>
+      <div class="mb-3">
+        <label for="carColor" class="form-label">Car color</label>
+        <input name="color" type="text" class="form-control" id="carColor">
+      </div>
+      <div class="mb-3">
+        <label for="carMileage" class="form-label">Car mileage</label>
+        <input name="mileage" type="number" class="form-control" id="carMileage">
+      </div>
+      <div class="mb-3">
+        <label for="carPrice" class="form-label">Car price</label>
+        <input name="price" type="number" class="form-control" id="carPrice">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+</html>
